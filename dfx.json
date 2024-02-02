@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "ElimishaTrustTrial_backend": {
+      "main": "src/ElimishaTrustTrial_backend/main.mo",
+      "type": "motoko"
+    },
+    "ElimishaTrustTrial_frontend": {
+      "dependencies": [
+        "ElimishaTrustTrial_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/ElimishaTrustTrial_frontend/src/index.html"
+      },
+      "source": [
+        "src/ElimishaTrustTrial_frontend/assets",
+        "dist/ElimishaTrustTrial_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
